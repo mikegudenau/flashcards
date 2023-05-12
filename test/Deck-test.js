@@ -19,14 +19,11 @@ describe('deck', function() {
   });
 
   it('should count the number of cards in the deck', function() {
-    // 1. Setup - create mock data
     const card1 = createCard(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
     const card2 = createCard(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
     const card3 = createCard(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
     const deck = createDeck([card1, card2, card3]);
-    // 2 Execution
     const sumOfDeck = countCards(deck);
-    // 3. Assertion
     expect(sumOfDeck).to.equal(3);
   })
 });

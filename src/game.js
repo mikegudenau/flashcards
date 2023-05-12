@@ -16,18 +16,13 @@ function printQuestion(round) {
 }
 
 function start() {
-  // create cards and puts them in a cards array
   const cards = [];
   prototypeQuestions.forEach((card) => {
     cards.push(createCard(card.id, card.question, card.answers, card.correctAnswer))
   });
-  // put card array into a deck
   const deck = createDeck(cards);
-  // create new round using the deck
   const round = createRound(deck);
-  // invoke printMessage(deck) to display the message in the CLI
   printMessage(deck);
-  // invoke printQuestion(round) to kick off our helper functions
   printQuestion(round);
 }
 

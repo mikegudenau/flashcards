@@ -1,11 +1,11 @@
 function evaluateGuess(guess, card) {
   if (guess === card.correctAnswer) {
-    return 'Correct!';
+    return "Correct!";
   } else {
-    return 'Incorrect!';
+    return "Incorrect!";
   }
 }
 
-module.exports = { 
-  evaluateGuess
+module.exports = {
+  evaluateGuess,
 };
